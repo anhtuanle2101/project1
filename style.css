@@ -1,0 +1,110 @@
+
+body{
+  background-image:URL("images/background.jpg");
+  background-size: contain;
+
+}
+
+
+a:link{
+  text-decoration: none;
+  color:white;
+}
+
+
+
+.heading{
+  border:2px solid black;
+  font-family:Arial;
+  font-weight: bold;
+  font-size: 40px;
+  animation-name:example;
+  animation-duration:1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.table{
+  width: 100%;
+  color:white;
+  /* max-width: ; */
+}
+
+.table th{
+  background-image: URL("images/background-heading.jpg");
+  background-size:cover;
+  background-color: black;
+  height:100px;
+}
+
+.img img{
+  border:3px solid grey;
+  height:180px;
+  width:180px;
+
+}
+
+.img{
+  text-align: center;
+  /* border:2px solid yellow; */
+  font-family:Arial;
+  animation-name:example;
+  animation-duration:1s;
+  animation-fill-mode: forwards;
+}
+
+.table img{
+  transition: all 0.2s ease-in 0.3s;
+}
+
+@keyframes example {
+  0%{opacity:0;}
+  25%{opacity:0.5;transform:scale(1.5)}
+  50%{transform:scale(0.8);}
+  75%{transform:scale(1.25);}
+  100%{opacity:1;transform:scale(1);}
+}
+
+img:hover{
+  transform:scale(1.1) rotateY(180deg);
+}
+
+.names{
+  /* border:2px solid white; */
+  text-align: center;
+}
+.name {
+  color:white;
+  font-size:20px;
+  font-family:Arial;
+  border:2px solid red;
+  background-color: orange;
+  animation-name:name;
+  animation-duration:1.5s;
+  animation-fill-mode: forwards;
+  transition: all 0.5s ease-out 0.4s;
+}
+
+@keyframes name {
+  0%{opacity:0};
+  33%{opacity:0.5;transform:rotateX(120deg);}
+  66%{opacity:1;transform: skewX(170deg);}
+  100%{opacity:1;transform: rotate(none);}
+}
+
+.name:hover{
+  transform:scale(1.05);
+  /* height:30px; */
+  background-color: red;
+  border:2px solid orange;
+  border-radius: 20px;
+  color:black;
+}
+
+.footer{
+  margin-top:20px;
+  width:100%;
+  text-align: center;
+  color:white;
+}
